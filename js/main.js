@@ -149,7 +149,9 @@ $(".form-select").addEventListener("change", () => {
   let container = createElement("div", "container");
   let wrapper = createElement("div", "wrapper");
   let copyright = createElement("p", "text-dark fw-bold p-0 m-0", date.getFullYear());
-  let author = createElement("p", "text-dark fw-bold p-0 m-0", "Navruzbek");
+  let author = createElement("a", "text-dark fw-bold p-0 m-0", "Navruzbek");
+  author.setAttribute("href", "https://t.me/+7Qc1CMACaIViOTli")
+  author.setAttribute("target", "blank")
   wrapper.appendChild(copyright);
   wrapper.appendChild(author);
   wrapper.setAttribute("class", "d-flex justify-content-between fs-4")
